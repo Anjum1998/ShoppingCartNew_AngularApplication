@@ -1,6 +1,6 @@
 
 <style>
-    .bgm{background-image:url('https://wallpaperaccess.com/full/1567836.jpg') ;}
+    .bgm{background-image:url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000') ;}
 </style>
 <div class="bgm" style="height:700px">
 <div class="container">
@@ -13,35 +13,29 @@
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <h2 class="text" style="text-align:center">ADMINISTRATOR LOGIN</h2>
+                    <h2 class="text" style="text-align:center">User Login</h2>
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <label for="" class="form-label">User Name</label>
-                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
-
+                    <label for="" class="form-label">Email Id</label>
+                    <input type="email" name="email" [(ngModel)]="email" id="" class="form-control">
+                   
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label ">Password</label>
-                    <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
+                    <input  name="password" [(ngModel)]="password"   type="password" name="" id="" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                   <button (click)="readValue()" class="btn btn-primary">Login</button>
+                   <button (click)="readValue()"  class="btn btn-primary">Login</button>
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <a routerLink="/userlogin" >ClickHere for SignIn</a>
-                   
-
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
-                    <a routerLink="/register" >ClickHere for SignUp</a>
+                    <a routerLink="" >User SignUp</a>
                    
 
                 </div>
