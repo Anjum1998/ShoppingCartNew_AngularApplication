@@ -12,6 +12,7 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { SearchProductComponent } from './search-product/search-product.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -33,6 +34,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewProductComponent
+  },
+  {
+    path:"search",
+    component:SearchProductComponent
   }
 ]
 @NgModule({
@@ -43,7 +48,8 @@ const myRoute:Routes=[
     UserRegisterComponent,
     NavbarComponent,
     AddProductComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
