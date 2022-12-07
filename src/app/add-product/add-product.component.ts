@@ -16,6 +16,11 @@ readValue=()=>
 {
   let data:any={"pname":this.pname,"image":this.image,"category":this.category,"description":this.description,"price":this.price}
   console.log(data)
+  this.category=""
+  this.description=""
+  this.image=""
+  this.pname=""
+  this.price
   
 }
 }
