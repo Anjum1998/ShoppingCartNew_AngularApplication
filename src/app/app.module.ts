@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
+import { SearchLoginComponent } from './search-login/search-login.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -38,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"search",
     component:SearchProductComponent
+  },
+  {
+    path:"searchlog",
+    component:SearchLoginComponent
   }
 ]
 @NgModule({
@@ -49,7 +54,8 @@ const myRoute:Routes=[
     NavbarComponent,
     AddProductComponent,
     ViewProductComponent,
-    SearchProductComponent
+    SearchProductComponent,
+    SearchLoginComponent
   ],
   imports: [
     BrowserModule,
