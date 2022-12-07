@@ -14,6 +14,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { SearchLoginComponent } from './search-login/search-login.component';
+import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -55,7 +56,8 @@ const myRoute:Routes=[
     AddProductComponent,
     ViewProductComponent,
     SearchProductComponent,
-    SearchLoginComponent
+    SearchLoginComponent,
+    NavbarUserComponent
   ],
   imports: [
     BrowserModule,
