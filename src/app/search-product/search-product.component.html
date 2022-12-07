@@ -23,6 +23,34 @@
                     <button (click)="readValue()" class="btn btn-success">Search</button>
                 </div>
             </div>
+
+            <div class="row m-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table table-bordered border-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of searchData">
+                                <td>{{i.pname}}</td>
+                                <td>{{i.category}}</td>
+                                <td>{{i.description}}</td>
+                                <td>{{i.price}}</td>
+                                <td>{{i.image}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
         </div>
     </div>
 </div>     
