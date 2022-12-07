@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-user-register',
@@ -13,23 +14,31 @@ export class UserRegisterComponent {
   email=""
   password=""
   confirm=""
-  
+  constructor(private api:ApiService){}
   readValue=()=>
-  {
-    let data:any={ "name":this.name,"address":this.address,"phone":this.phone,"email":this.email,"password":this.password
-  ,"confirm":this.confirm}
-  console.log(data)
-  if (this.password==this.confirm) {
-    alert("successfully added")
-    this.address=""
-    this.confirm=""
-    this.email=""
-    this.name=""
-    this.password=""
-    this.phone=""
-  } else {
-    alert("password does not match")
-  }
+    {
+      let data:any={ "name":this.name,"address":this.address,"phone":this.phone,"email":this.email,"password":this.password
+    ,"confirm":this.confirm}
+    console.log(data)
+    this.api.addUser(data).subscribe(
+      (response:any)=>
+      {
+        console.log(response)
+        if (response.status=="success") {
+          alert("user registered successfully")
+          this.address=""
+          this.confirm=""
+          this.email=""
+          this.name=""
+          this.password=""
+          this.phone=""
+        } else {
+          alert("wrong ")
+        }
+      }
+    )
+
+  
   }
 
 }
