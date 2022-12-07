@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddProductComponent } from './add-product/add-product.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -23,6 +24,10 @@ const myRoute:Routes=[
   {
     path:"register",
     component:UserRegisterComponent
+  },
+  {
+    path:"add",
+    component:AddProductComponent
   }
 ]
 @NgModule({
@@ -31,7 +36,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     UserLoginComponent,
     UserRegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
