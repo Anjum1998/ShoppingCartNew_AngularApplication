@@ -11,7 +11,7 @@ export class SearchLoginComponent {
     api.fetchProduct().subscribe(
       (response:any)=>
       {
-        this.data=response
+        this.searchData=response
       }
     )
   }
