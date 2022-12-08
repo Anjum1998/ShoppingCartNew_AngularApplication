@@ -30,6 +30,7 @@ readValue=()=>
         alert("invalid product name")
       }
       else{
+        this.data=[];
         this.searchData=response
       }
     }
