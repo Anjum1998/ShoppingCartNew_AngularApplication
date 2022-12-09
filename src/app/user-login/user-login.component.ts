@@ -27,7 +27,10 @@ readValue=()=>
         this.email=""
         this.password=""
       } else {
-        this.searchUser=response;
+        this.searchUser=response; 
+        let userId=response.userId
+        console.log(userId)
+        localStorage.setItem("userInfo",userId)
         this.router.navigate(['/searchlog'])
       }
      
